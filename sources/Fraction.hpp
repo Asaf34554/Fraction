@@ -14,8 +14,8 @@ namespace ariel{
         Fraction():
             _numerator(0),_denominator(1){}
 
-        Fraction(int numerator,int denominator);
-        Fraction(float f);
+        Fraction(int ,int );
+        Fraction(float );
         // Fraction(const Fraction& other) {
         //     _numerator = other._numerator;
         //     _denominator = other._denominator;
@@ -35,43 +35,43 @@ namespace ariel{
    
     //operators
         static float fraction_to_float(const Fraction&);
-        Fraction operator + (const Fraction& other) const;
-        friend Fraction operator + (const float num1, const Fraction& num2);
-        friend Fraction operator + (const Fraction& num1, const float num2);
+        Fraction operator + (const Fraction& ) const;
+        friend Fraction operator + (float, const Fraction& );
+        friend Fraction operator + (const Fraction& , float );
         
-        Fraction operator - (const Fraction& other) const;
-        friend Fraction operator - (const float num1, const Fraction& num2);
-        friend Fraction operator - (const Fraction& num1, const float num2);
+        Fraction operator - (const Fraction& ) const;
+        friend Fraction operator - (float , const Fraction& );
+        friend Fraction operator - (const Fraction& , float );
 
-        Fraction operator * (const Fraction& other) const;
-        friend Fraction operator * (const float num1, const Fraction& num2);
-        friend Fraction operator * (const Fraction& num1, const float num2);
+        Fraction operator * (const Fraction& ) const;
+        friend Fraction operator * (float , const Fraction& );
+        friend Fraction operator * (const Fraction& , float );
         
-        Fraction operator / (const Fraction& other) const;
-        friend Fraction operator / (const float num1, const Fraction& num2);
-        friend Fraction operator / (const Fraction& num1, const float num2);
+        Fraction operator / (const Fraction& ) const;
+        friend Fraction operator / (float , const Fraction& );
+        friend Fraction operator / (const Fraction& , float );
 
         
-        bool operator == (const Fraction& f1)const;
-        friend bool operator == (float num1,const Fraction& num2);
-        friend bool operator == (const Fraction& num1,float num2);
+        bool operator == (const Fraction& )const;
+        friend bool operator == (float ,const Fraction& );
+        friend bool operator == (const Fraction& ,float );
 
-        bool operator > (const Fraction& f1)const;
-        friend bool operator > (const float num1,const Fraction& num2);
-        friend bool operator > (const Fraction& num1,const float num2);
+        bool operator > (const Fraction& )const;
+        friend bool operator > (float ,const Fraction& );
+        friend bool operator > (const Fraction& ,float );
 
-        bool operator < (const Fraction& f1)const;
-        friend bool operator < (const float num1,const Fraction& num2);
-        friend bool operator < (const Fraction& num1,const float num2);
+        bool operator < (const Fraction& )const;
+        friend bool operator < (float ,const Fraction& );
+        friend bool operator < (const Fraction& ,float );
 
-        bool operator >= (const Fraction& f1)const;
-        friend bool operator >= (const float num1,const Fraction& num2);
-        friend bool operator >= (const Fraction& num1,const float num2);
+        bool operator >= (const Fraction& )const;
+        friend bool operator >= (float num1,const Fraction& );
+        friend bool operator >= (const Fraction& ,float );
 
 
-        bool operator <= (const Fraction& f1)const;
-        friend bool operator <= (const float num1,const Fraction& num2);
-        friend bool operator <= (const Fraction& num1,const float num2);
+        bool operator <= (const Fraction& )const;
+        friend bool operator <= (float ,const Fraction& );
+        friend bool operator <= (const Fraction& ,float );
 
 
         Fraction& operator ++ (){
@@ -93,10 +93,10 @@ namespace ariel{
             return copy;
         }
         
-        friend std::ostream& operator << (std::ostream& output, const Fraction& f);
+        friend std::ostream& operator << (std::ostream& , const Fraction& );
         // friend ostream& operator << ( const Fraction& f,ostream output);
         
-        friend std::istream& operator >> (std::istream& input,Fraction& f); 
+        friend std::istream& operator >> (std::istream& ,Fraction& ); 
         // friend ostream& operator >> ( const Fraction& f,ostream output);
 
      };  
